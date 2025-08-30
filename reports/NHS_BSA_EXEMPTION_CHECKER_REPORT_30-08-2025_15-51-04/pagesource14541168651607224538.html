@@ -1,0 +1,250 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;!--&lt;![endif]--&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;title id="title"&gt;You currently have an exemption - <br/>
+  Check if you have an exemption from paying NHS costs - NHSBSA<br/>
+<br/>
+  &lt;/title&gt;&lt;!-- NHS Business Services Authority eligibility-checker --&gt; &lt;!-- Version 4.0.0-4.0.0​ --&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;<br/>
+  &lt;meta name="description" content=""&gt;&lt;!-- NHSUK Toolkit links--&gt; &lt;!-- app base --&gt;<br/>
+  &lt;link href="/webjars/nhsuk-frontend/9.0.1/dist/nhsuk-9.0.1.min-37cb48c68e40efc52696f20915a10537.css" media="screen" rel="stylesheet"&gt;<br/>
+  &lt;link rel="stylesheet" href="/css/icons-4f429ae549bade5f9befac076d024e51.css"&gt;<br/>
+  &lt;link rel="stylesheet" href="/css/app-extended-d0a908d6fe75b8d69a36ee9072ec4761.css"&gt;<br/>
+  &lt;script src="/webjars/nhsuk-frontend/9.0.1/dist/nhsuk-9.0.1.min-73024e1e4740a0a34518284c317e7e7d.js" defer&gt;&lt;/script&gt;&lt;!-- Assets --&gt;<br/>
+  &lt;link href="https://www.nhs.uk/" rel="preconnect"&gt;<br/>
+  &lt;link href="https://assets.nhs.uk/" rel="preconnect" crossorigin="crossorigin"&gt;&lt;!-- Fonts --&gt;<br/>
+  &lt;link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin="crossorigin"&gt;<br/>
+  &lt;link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin="crossorigin"&gt;&lt;!-- Icons --&gt;<br/>
+  &lt;link rel="shortcut icon" href="/webjars/nhsuk-frontend/9.0.1/packages/assets/favicons/favicon-68c7f017cfbae676351d5e4c1afc6f07.ico" type="image/x-icon"&gt;<br/>
+  &lt;link rel="apple-touch-icon" href="/webjars/nhsuk-frontend/9.0.1packages/assets/favicons/apple-touch-icon-180x180.png"&gt;<br/>
+  &lt;link rel="mask-icon" href="/webjars/nhsuk-frontend/9.0.1/packages/assets/favicons/favicon-ec22bc2cbc81afd48bec296e3535998a.svg" color="#005eb8"&gt;&lt;!-- TODO --&gt;<br/>
+  &lt;link rel="icon" sizes="192x192" href="/webjars/nhsuk-frontend/9.0.1/packages/assets/favicons/favicon-192x192-43924bfe6c7e0f6c0996ee28ad6a5883.png"&gt;&lt;!-- Meta data --&gt;<br/>
+  &lt;meta name="msapplication-TileImage" content="/webjars/nhsuk-frontend/9.0.1/packages/assets/favicons/mediumtile-144x144-cf49858724925dbcfe5f3fa5c90aee0b.png"&gt;<br/>
+  &lt;meta name="msapplication-TileColor" content="#005eb8"&gt;<br/>
+  &lt;meta name="msapplication-square70x70logo" content="/webjars/nhsuk-frontend/9.0.1/packages/assets/favicons/smalltile-70x70-29f75b06cf758e8be6b5646317ff3bff.png"&gt;<br/>
+  &lt;meta name="msapplication-square150x150logo" content="/webjars/nhsuk-frontend/9.0.1/packages/assets/favicons/mediumtile-150x150-89688d93af5bdc0778ec7e4c7b443ac2.png"&gt;<br/>
+  &lt;meta name="msapplication-wide310x150logo" content="/webjars/nhsuk-frontend/9.0.1/packages/assets/favicons/widetile-310x150-535c3996630d6b6a7250a807d6eec5de.png"&gt;<br/>
+  &lt;meta name="msapplication-square310x310logo" content="/webjars/nhsuk-frontend/9.0.1/packages/assets/favicons/largetile-310x310-294742e00ff46e8a003d4de1f2c98be7.png"&gt;<br/>
+  &lt;meta property="og:url" content="https://services.nhsbsa.nhs.uk/start"&gt;<br/>
+  &lt;meta property="og:title" content="Check if you have an exemption from paying NHS costs"&gt;<br/>
+  &lt;meta property="og:description" content="An NHS exemption certificate helps you to pay for your NHS costs, such as prescriptions or dental treatment."&gt;<br/>
+  &lt;meta property="og:type" content="website"&gt;<br/>
+  &lt;meta property="og:image" content="/webjars/nhsuk-frontend/9.0.1/packages/assets/logos/open-graph-a74435697f455e0523004f43d99e65d7.png"&gt;<br/>
+  &lt;meta property="og:image:alt" content="NHS"&gt;<br/>
+  &lt;meta name="twitter:card" content="summary_large_image"&gt;<br/>
+  &lt;meta name="twitter:site" content="@NHSBSA"&gt;<br/>
+  &lt;meta name="twitter:creator" content="@NHSBSA"&gt;<br/>
+  &lt;noscript&gt;<br/>
+   &lt;meta http-equiv="refresh" content="1800;url=/session-timeout"&gt;<br/>
+  &lt;/noscript&gt;<br/>
+  &lt;link href="/webjars/nhsbsa-session-timeout/2.0.1/stylesheets/modal-dialog-a2ed27c211bd2a3917148504d78fee35.css" media="screen" rel="stylesheet"&gt;&lt;!-- Cookie Banner --&gt;<br/>
+  &lt;script data-policy-url="/cookies" src="/javascripts/cookie.min.bsa-2717e419e8c621e166404e6ca65a1069.js"&gt;&lt;/script&gt;&lt;!-- Google site tag (gtag.js) - Google Analytics 4 --&gt;<br/>
+  &lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-RK1JFQB6PH" data-cookieconsent="statistics" type="text/plain"&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;<br/>
+	  window.dataLayer = window.dataLayer || [];<br/>
+	  function gtag(){dataLayer.push(arguments);}<br/>
+	  gtag('js', new Date());<br/>
+	<br/>
+	  gtag('config', 'G-RK1JFQB6PH');<br/>
+	&lt;/script&gt;&lt;!-- End Google Tag Manager --&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body class="js-enabled"&gt;<br/>
+  &lt;div&gt;<br/>
+   &lt;div id="nhsuk-cookie-banner" role="region"&gt;<br/>
+    &lt;div class="nhsuk-cookie-banner" id="cookiebanner"&gt;<br/>
+     &lt;div class="nhsuk-width-container"&gt;<br/>
+      &lt;h2&gt;Cookies on NHS website&lt;/h2&gt;<br/>
+      &lt;p&gt;We've put some small files called cookies on your device to make our site work.&lt;/p&gt;<br/>
+      &lt;p&gt;We'd also like to use analytics cookies. These send anonymous information about how our site is used to a service called Google Analytics. We use this information to improve our site.&lt;/p&gt;<br/>
+      &lt;p&gt;Let us know if this is OK. We'll use a cookie to save your choice across all our digital services for the next 3 calendar months. You can &lt;a id="nhsuk-cookie-banner__link" href="/cookies"&gt;read more about our cookies&lt;/a&gt; before you choose.&lt;/p&gt;<br/>
+      &lt;ul&gt;<br/>
+       &lt;li&gt;&lt;button class="nhsuk-button" id="nhsuk-cookie-banner__link_accept_analytics" href="#"&gt;I'm OK with analytics cookies&lt;/button&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;button class="nhsuk-button" id="nhsuk-cookie-banner__link_accept" href="#"&gt;Do not use analytics cookies&lt;/button&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="nhsuk-success-banner" id="nhsuk-cookie-confirmation-banner" style="display:none;"&gt;<br/>
+     &lt;div class="nhsuk-width-container"&gt;<br/>
+      &lt;p id="nhsuk-success-banner__message"&gt;You can change your cookie settings at any time using our &lt;a href="/cookies"&gt;cookies page&lt;/a&gt;.&lt;/p&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;style&gt;@font-face{font-family:'Frutiger W01';font-display:swap;font-style:normal;font-weight:400;src:url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix");src:url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix") format("eot"),url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2") format("woff2"),url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff") format("woff"),url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.ttf") format("truetype"),url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115") format("svg")}@font-face{font-family:'Frutiger W01';font-display:swap;font-style:normal;font-weight:600;src:url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix");src:url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix") format("eot"),url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2") format("woff2"),url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff") format("woff"),url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.ttf") format("truetype"),url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca") format("svg")}#nhsuk-cookie-banner{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:Frutiger W01,Arial,Sans-serif;color:#212b32}#nhsuk-cookie-banner a{color:#005eb8}#nhsuk-cookie-banner a:visited{color:#330072}#nhsuk-cookie-banner a:hover{color:#7C2855;text-decoration:none}#nhsuk-cookie-banner a:focus{background-color:#ffeb3b;box-shadow:0 -2px #ffeb3b,0 4px #212b32;color:#212b32;outline:4px solid transparent;text-decoration:none}#nhsuk-cookie-banner a:focus:hover{text-decoration:none}#nhsuk-cookie-banner a:focus:visited{color:#212b32}#nhsuk-cookie-banner a:focus .nhsuk-icon{fill:#212b32}#nhsuk-cookie-banner a:active{color:#002f5c}@media print{#nhsuk-cookie-banner a:after{color:#212b32;content:" (Link: " attr(href) ")";font-size:14pt}}#nhsuk-cookie-banner .ie8 a:focus{outline:1px dotted #212b32}#nhsuk-cookie-banner .nhsuk-width-container{margin:0 16px;max-width:960px}@media (min-width: 48.0625em){#nhsuk-cookie-banner .nhsuk-width-container{margin:0 32px}}@media (min-width: 1024px){#nhsuk-cookie-banner .nhsuk-width-container{margin:0 auto}}#nhsuk-cookie-banner .nhsuk-width-container-fluid{margin:0 16px;max-width:100%}@media (min-width: 48.0625em){#nhsuk-cookie-banner .nhsuk-width-container-fluid{margin:0 32px}}#nhsuk-cookie-banner .nhsuk-button{font-weight:400;font-size:16px;font-size:1rem;line-height:1.5;margin-bottom:28px;-webkit-appearance:none;background-color:#007f3b;border:2px solid transparent;border-radius:4px;box-shadow:0 4px 0 #00401e;box-sizing:border-box;color:#fff;cursor:pointer;display:inline-block;font-weight:600;margin-top:0;padding:12px 16px;position:relative;text-align:center;vertical-align:top;width:auto}@media (min-width: 40.0625em){#nhsuk-cookie-banner .nhsuk-button{font-size:19px;font-size:1.1875rem;line-height:1.47368}}@media print{#nhsuk-cookie-banner .nhsuk-button{font-size:14pt;line-height:1.15}}@media (min-width: 40.0625em){#nhsuk-cookie-banner .nhsuk-button{margin-bottom:36px}}@media (max-width: 40.0525em){#nhsuk-cookie-banner .nhsuk-button{padding:8px 16px}}#nhsuk-cookie-banner .nhsuk-button:link,#nhsuk-cookie-banner .nhsuk-button:visited,#nhsuk-cookie-banner .nhsuk-button:active,#nhsuk-cookie-banner .nhsuk-button:hover{color:#fff;text-decoration:none}#nhsuk-cookie-banner .nhsuk-button::-moz-focus-inner{border:0;padding:0}#nhsuk-cookie-banner .nhsuk-button:hover{background-color:#00662f}#nhsuk-cookie-banner .nhsuk-button:focus{background:#ffeb3b;box-shadow:0 4px 0 #212b32;color:#212b32;outline:4px solid transparent}#nhsuk-cookie-banner .nhsuk-button:active{background:#00401e;box-shadow:none;color:#fff;top:4px}#nhsuk-cookie-banner .nhsuk-button::before{background:transparent;bottom:-6px;content:'';display:block;left:-2px;position:absolute;right:-2px;top:-2px}#nhsuk-cookie-banner .nhsuk-button:active::before{top:-6px}#nhsuk-cookie-banner .nhsuk-button--secondary{background-color:#4c6272;box-shadow:0 4px 0 #263139}#nhsuk-cookie-banner .nhsuk-button--secondary:hover{background-color:#384853}#nhsuk-cookie-banner .nhsuk-button--secondary:focus{background:#ffeb3b;box-shadow:0 4px 0 #212b32;color:#212b32;outline:4px solid transparent}#nhsuk-cookie-banner .nhsuk-button--secondary:active{background:#263139;box-shadow:none;color:#fff;top:4px}#nhsuk-cookie-banner .nhsuk-button--secondary.nhsuk-button--disabled{background-color:#4c6272}#nhsuk-cookie-banner .nhsuk-button--reverse{background-color:#fff;box-shadow:0 4px 0 #212b32;color:#212b32}#nhsuk-cookie-banner .nhsuk-button--reverse:hover{background-color:#f2f2f2;color:#212b32}#nhsuk-cookie-banner .nhsuk-button--reverse:focus{background:#ffeb3b;box-shadow:0 4px 0 #212b32;color:#212b32;outline:4px solid transparent}#nhsuk-cookie-banner .nhsuk-button--reverse:active{background:#212b32;box-shadow:none;color:#fff;top:4px}#nhsuk-cookie-banner .nhsuk-button--reverse:link{color:#212b32}#nhsuk-cookie-banner .nhsuk-button--reverse.nhsuk-button--disabled{background-color:#fff}#nhsuk-cookie-banner .nhsuk-button--reverse.nhsuk-button--disabled:focus{background-color:#fff}#nhsuk-cookie-banner .nhsuk-button--disabled,#nhsuk-cookie-banner .nhsuk-button[disabled="disabled"],#nhsuk-cookie-banner .nhsuk-button[disabled]{background-color:#007f3b;opacity:0.5;pointer-events:none}#nhsuk-cookie-banner .nhsuk-button--disabled:hover,#nhsuk-cookie-banner .nhsuk-button[disabled="disabled"]:hover,#nhsuk-cookie-banner .nhsuk-button[disabled]:hover{background-color:#007f3b;cursor:default}#nhsuk-cookie-banner .nhsuk-button--disabled:focus,#nhsuk-cookie-banner .nhsuk-button[disabled="disabled"]:focus,#nhsuk-cookie-banner .nhsuk-button[disabled]:focus{background-color:#007f3b;outline:none}#nhsuk-cookie-banner .nhsuk-button--disabled:active,#nhsuk-cookie-banner .nhsuk-button[disabled="disabled"]:active,#nhsuk-cookie-banner .nhsuk-button[disabled]:active{box-shadow:0 4px 0 #00401e;top:0}#nhsuk-cookie-banner .nhsuk-button--secondary[disabled="disabled"],#nhsuk-cookie-banner .nhsuk-button--secondary[disabled]{background-color:#4c6272;opacity:0.5}#nhsuk-cookie-banner .nhsuk-button--secondary[disabled="disabled"]:hover,#nhsuk-cookie-banner .nhsuk-button--secondary[disabled]:hover{background-color:#4c6272;cursor:default}#nhsuk-cookie-banner .nhsuk-button--secondary[disabled="disabled"]:focus,#nhsuk-cookie-banner .nhsuk-button--secondary[disabled]:focus{outline:none}#nhsuk-cookie-banner .nhsuk-button--secondary[disabled="disabled"]:active,#nhsuk-cookie-banner .nhsuk-button--secondary[disabled]:active{box-shadow:0 4px 0 #263139;top:0}#nhsuk-cookie-banner .nhsuk-button--reverse[disabled="disabled"],#nhsuk-cookie-banner .nhsuk-button--reverse[disabled]{background-color:#fff;opacity:0.5}#nhsuk-cookie-banner .nhsuk-button--reverse[disabled="disabled"]:hover,#nhsuk-cookie-banner .nhsuk-button--reverse[disabled]:hover{background-color:#fff;cursor:default}#nhsuk-cookie-banner .nhsuk-button--reverse[disabled="disabled"]:focus,#nhsuk-cookie-banner .nhsuk-button--reverse[disabled]:focus{outline:none}#nhsuk-cookie-banner .nhsuk-button--reverse[disabled="disabled"]:active,#nhsuk-cookie-banner .nhsuk-button--reverse[disabled]:active{box-shadow:0 4px 0 #212b32;top:0}#nhsuk-cookie-banner .ie8 .nhsuk-button:focus{outline:1px dotted #212b32}#nhsuk-cookie-banner .nhsuk-cookie-banner{background:white;position:relative;box-shadow:0 0 4px 0 #212b32;padding:24px 0 19px;width:100%;z-index:1}#nhsuk-cookie-banner h2{margin-bottom:16px;display:block;font-weight:600;color:#212b32;margin-top:0;font-size:18px;line-height:1.125}@media (min-width: 40.0625em){#nhsuk-cookie-banner h2{margin-bottom:24px}}@media (min-width: 40.0625em){#nhsuk-cookie-banner h2{font-size:22px;line-height:1.375}}#nhsuk-cookie-banner p{margin-bottom:16px;display:block;margin-top:0;font-size:16px;line-height:1.5}@media (min-width: 40.0625em){#nhsuk-cookie-banner p{margin-bottom:24px}}@media (min-width: 40.0625em){#nhsuk-cookie-banner p{font-size:19px;line-height:1.47368}}#nhsuk-cookie-banner a{font-weight:normal}#nhsuk-cookie-banner .nhsuk-button{margin-bottom:12px;display:inline-block;vertical-align:top;font-family:inherit;font-size:16px;line-height:1.5}@media (min-width: 40.0625em){#nhsuk-cookie-banner .nhsuk-button{margin-bottom:12px}}@media (min-width: 40.0625em){#nhsuk-cookie-banner .nhsuk-button{font-size:19px;line-height:1.47368}}#nhsuk-cookie-banner ul,#nhsuk-cookie-banner li{list-style:none;padding:0;margin:0}@media (min-width: 48.0625em){#nhsuk-cookie-banner li{display:inline;margin-right:20px}}#nhsuk-cookie-banner .nhsuk-success-banner{background-color:#007f3b;color:#fff;padding:8px 0 8px 0;position:relative}#nhsuk-cookie-banner .nhsuk-success-banner p{margin:0}#nhsuk-cookie-banner .nhsuk-success-banner a,#nhsuk-cookie-banner .nhsuk-success-banner a:visited{color:#fff}#nhsuk-cookie-banner .nhsuk-success-banner a:hover,#nhsuk-cookie-banner .nhsuk-success-banner a:focus{color:#212b32}#nhsuk-cookie-banner p{padding:0px;font-size:16px}@media (min-width: 40.0625em){#nhsuk-cookie-banner p{font-size:19px}}#nhsuk-cookie-banner a{text-decoration:underline;font-size:16px}@media (min-width: 40.0625em){#nhsuk-cookie-banner a{font-size:19px}}#nhsuk-cookie-banner a:hover{text-decoration:none}<br/>
+&lt;/style&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;script&gt;document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');&lt;/script&gt;<br/>
+  &lt;header class="nhsuk-header" id="nhs-global-header" role="banner"&gt;&lt;a class="nhsuk-skip-link nhsuk-skip-link-header no-print" href="#content"&gt;Skip to main content&lt;/a&gt;<br/>
+   &lt;div class="nhsuk-header__container nhsuk-header_padding"&gt;<br/>
+    &lt;div class="nhsuk-header__logo"&gt;&lt;a class="nhsuk-header__link nhsuk-header__link--service" id="logo" aria-label="Check if you have an exemption from paying NHS costs" href="/"&gt;<br/>
+      &lt;svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" focusable="false" viewbox="0 0 40 16"&gt;&lt;path class="nhsuk-logo__background" d="M0 0h40v16H0z"&gt;&lt;/path&gt; &lt;path class="nhsuk-logo__text" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"&gt;<br/>
+       &lt;/path&gt; &lt;image src="https://assets.nhs.uk/images/nhs-logo.png" xlink:href="" alt="NHS Business Services Authority"&gt;<br/>
+       &lt;/image&gt;<br/>
+      &lt;/svg&gt;&lt;span class="nhsuk-header__service-name"&gt; Check if you have an exemption from paying NHS costs &lt;/span&gt; &lt;/a&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/header&gt;<br/>
+  &lt;div class="nhsuk-width-container"&gt;<br/>
+   &lt;div class="nhsuk-phase-banner nhsuk-u-margin-bottom-5 no-print"&gt;<br/>
+    &lt;p class="nhsuk-phase-banner__content"&gt;&lt;strong class="nhsuk-tag nhsuk-phase-banner__content__tag"&gt; BETA &lt;/strong&gt; &lt;span class="nhsuk-phase-banner__text"&gt; This is a new service - your &lt;a class="nhsuk-link" href="https://online1.snapsurveys.com/check-my-nhs-exemption-feedback" target="_blank" rel="noopener noreferrer"&gt;feedback&lt;span class="nhsuk-u-visually-hidden"&gt; (opens in new tab)&lt;/span&gt;&lt;/a&gt; will help us to improve it. &lt;/span&gt;&lt;/p&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="nhsuk-back-link nhsuk-u-margin-bottom-4 no-print" id="back"&gt;&lt;a class="nhsuk-back-link__link" href="javascript:history.go(-1)"&gt;<br/>
+     &lt;svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"&gt;<br/>
+      &lt;/path&gt;<br/>
+     &lt;/svg&gt; Go back &lt;/a&gt;<br/>
+    &lt;script type="text/javascript"&gt;<br/>
+          document.getElementById('back-button');<br/>
+        &lt;/script&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="content" role="main"&gt;<br/>
+    &lt;div class="nhsuk-grid-row"&gt;<br/>
+     &lt;div class="nhsuk-grid-column-two-thirds"&gt;<br/>
+      &lt;div class="exemption-done-panel"&gt;<br/>
+       &lt;h1 class="nhsuk-heading-xl done-panel"&gt;You currently have an NHS exemption&lt;/h1&gt;<br/>
+       &lt;h2 class="nhsuk-heading-m"&gt;Expires on 31 December 2099&lt;/h2&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;form&gt;<br/>
+       &lt;dl class="nhsuk-summary-list"&gt;<br/>
+        &lt;div class="nhsuk-summary-list__row"&gt;<br/>
+         &lt;dt class="nhsuk-summary-list__key"&gt;<br/>
+          Name<br/>
+         &lt;/dt&gt;<br/>
+         &lt;dd class="nhsuk-summary-list__value"&gt;<br/>
+          testE Bellamy<br/>
+         &lt;/dd&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="nhsuk-summary-list__row"&gt;<br/>
+         &lt;dt class="nhsuk-summary-list__key"&gt;<br/>
+          Date of birth<br/>
+         &lt;/dt&gt;<br/>
+         &lt;dd class="nhsuk-summary-list__value"&gt;<br/>
+          1 January 1980<br/>
+         &lt;/dd&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="nhsuk-summary-list__row"&gt;<br/>
+         &lt;dt class="nhsuk-summary-list__key"&gt;<br/>
+          Exempt from paying<br/>
+         &lt;/dt&gt;<br/>
+         &lt;dd class="nhsuk-summary-list__value"&gt;<br/>
+          &lt;ul class="nhsuk-list nhsuk-list--bullet"&gt;<br/>
+           &lt;li&gt;NHS prescriptions&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/dd&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="nhsuk-summary-list__row"&gt;<br/>
+         &lt;dt class="nhsuk-summary-list__key"&gt;<br/>
+          This exemption is not for<br/>
+         &lt;/dt&gt;<br/>
+         &lt;dd class="nhsuk-summary-list__value"&gt;<br/>
+          &lt;ul class="nhsuk-list nhsuk-list--bullet"&gt;<br/>
+           &lt;li&gt;NHS dental check-ups and treatment&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/dd&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="nhsuk-summary-list__row"&gt;<br/>
+         &lt;dt class="nhsuk-summary-list__key"&gt;<br/>
+          End date<br/>
+         &lt;/dt&gt;<br/>
+         &lt;dd class="nhsuk-summary-list__value"&gt;<br/>
+          31 December 2099<br/>
+         &lt;/dd&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="nhsuk-summary-list__row"&gt;<br/>
+         &lt;dt class="nhsuk-summary-list__key"&gt;<br/>
+          Today's date<br/>
+         &lt;/dt&gt;<br/>
+         &lt;dd class="nhsuk-summary-list__value"&gt;<br/>
+          30 August 2025<br/>
+         &lt;/dd&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/dl&gt;<br/>
+      &lt;/form&gt;<br/>
+      &lt;h2 class="nhsuk-heading-m"&gt;How to get your help&lt;/h2&gt;<br/>
+      &lt;p class="nhsuk-body"&gt;Don't worry if you've lost your exemption certificate, you can show this page as proof today.&lt;/p&gt;<br/>
+      &lt;h3 class="nhsuk-heading-s"&gt;Collecting prescriptions&lt;/h3&gt;<br/>
+      &lt;p class="nhsuk-body"&gt;Pharmacy staff will ask for your exemption details. If you do not have them with you, your pharmacist should tick 'Evidence not seen' on the prescription. They will not charge you.&lt;/p&gt;&lt;hide&gt;<br/>
+       &lt;div class="form-group"&gt;<br/>
+        &lt;ul class="nhsuk-list"&gt;<br/>
+         &lt;li&gt;&lt;a class="icon print-icon" href="javascript:window.print();"&gt;Print this&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;h2 class="nhsuk-heading-m"&gt;Could you get help to pay other NHS costs?&lt;/h2&gt;<br/>
+       &lt;p class="nhsuk-body"&gt;Answer a few more questions about your circumstances to check if you could get &lt;a class="nhsuk-link" id="eligibility-checker-page-link" href="https://test.check-for-help-paying-nhs-costs.nhsbsa.net/start" target="_blank" rel="noopener noreferrer"&gt;help to pay other NHS costs&lt;span class="nhsuk-u-visually-hidden"&gt; (opens in new tab)&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;<br/>
+       &lt;hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible"&gt;<br/>
+       &lt;div&gt;<br/>
+        &lt;div class="nhsuk-form-group"&gt;<br/>
+         &lt;h3 class="nhsuk-heading-s"&gt;Help us improve this service&lt;/h3&gt;<br/>
+         &lt;p class="nhsuk-body"&gt;&lt;a class="nhsuk-link" href="https://online1.snapsurveys.com/check-my-nhs-exemption-feedback" id="finished-survey" target="_blank" rel="noopener noreferrer"&gt;What did you think of this service?&lt;span class="nhsuk-u-visually-hidden"&gt; (opens in new tab)&lt;/span&gt;&lt;/a&gt; (Takes 30 seconds)&lt;/p&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="nhsuk-action-link no-print"&gt;&lt;a class="nhsuk-action-link__link" id="search-again" href="/"&gt;<br/>
+         &lt;svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M0 0h24v24H0z" fill="none"&gt;&lt;/path&gt; &lt;path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"&gt;<br/>
+          &lt;/path&gt;<br/>
+         &lt;/svg&gt;&lt;span class="nhsuk-action-link__text no-print"&gt;Check again&lt;/span&gt; &lt;/a&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/hide&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/main&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;footer role="contentinfo"&gt;<br/>
+   &lt;div class="nhsuk-footer-container"&gt;<br/>
+    &lt;div class="nhsuk-width-container"&gt;<br/>
+     &lt;h2 class="nhsuk-u-visually-hidden"&gt;Support links&lt;/h2&gt;<br/>
+     &lt;div class="nhsuk-footer" id="nhsuk-footer"&gt;<br/>
+      &lt;ul class="nhsuk-footer__list"&gt;<br/>
+       &lt;li class="nhsuk-footer__list-item nhsuk-footer-default__list-item"&gt;&lt;a class="nhsuk-footer__list-item-link" id="footer-link-accessibility" target="_blank" rel="noopener noreferrer" href="https://www.nhsbsa.nhs.uk/accessibility-statement-check-if-you-have-exemption-paying-nhs-costs" aria-label="Accessibility statement (opens in new tab)"&gt;Accessibility statement&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li class="nhsuk-footer__list-item nhsuk-footer-default__list-item"&gt;&lt;a class="nhsuk-footer__list-item-link" id="footer-link-cookies" href="/cookies"&gt;Cookies&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li class="nhsuk-footer__list-item nhsuk-footer-default__list-item"&gt;&lt;a class="nhsuk-footer__list-item-link" id="footer-link-privacy" target="_blank" href="https://www.nhsbsa.nhs.uk/our-policies/privacy/check-if-you-have-nhs-exemption-privacy-notice" rel="noopener noreferrer" aria-label="Privacy policy (opens in new tab)"&gt;Privacy policy&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li class="nhsuk-footer__list-item nhsuk-footer-default__list-item"&gt;&lt;a class="nhsuk-footer__list-item-link" id="footer-link-terms" target="_blank" href="https://www.nhsbsa.nhs.uk/our-policies/terms-and-conditions" rel="noopener noreferrer" aria-label="Terms and conditions (opens in new tab)"&gt;Terms and conditions&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+      &lt;p class="nhsuk-footer__copyright"&gt;© Crown copyright&lt;/p&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="app-ogl-footer"&gt;<br/>
+     &lt;div class="nhsuk-width-container app-width-container"&gt;<br/>
+      &lt;p class="app-ogl-footer--text-bsa"&gt;Built by the &lt;a class="nhsuk-footer__list-item-link" id="footer-link-dental" target="_blank" href="http://www.nhsbsa.nhs.uk" rel="noopener noreferrer"&gt;NHS Business Services Authority&lt;span class="nhsuk-u-visually-hidden"&gt; (opens in new tab)&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;<br/>
+      &lt;p class="app-ogl-footer--text"&gt;<br/>
+       &lt;svg xmlns="http://www.w3.org/2000/svg" height="17" width="41" focusable="false" viewbox="0 0 483.2 195.7"&gt;&lt;path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"&gt;<br/>
+        &lt;/path&gt;<br/>
+       &lt;/svg&gt; All content is available under the &lt;a class="nhsuk-footer__list-item-link" target="_blank" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license noopener"&gt;Open Government Licence v3.0&lt;span class="nhsuk-u-visually-hidden"&gt; (opens in new tab)&lt;/span&gt;&lt;/a&gt;, except where otherwise stated.&lt;/p&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/footer&gt;&lt;dialog id="js-modal-dialog" class="modal-dialog dialog" role="dialog" aria-live="polite" aria-labelledby="dialog-title" aria-describedby="at-timer" data-url-redirect="/session-timeout" data-session-timeout="1800" data-session-timeout-warning="300"&gt;<br/>
+   &lt;div class="modal-dialog__inner"&gt;<br/>
+    &lt;h1 id="dialog-title" class="nhsuk-heading-l"&gt;Your application will time out soon&lt;/h1&gt;<br/>
+    &lt;div class="modal-dialog__inner__text"&gt;<br/>
+     &lt;div id="timer" class="timer" aria-hidden="true"&gt;&lt;/div&gt;<br/>
+     &lt;div id="at-timer" class="at-timer nhsuk-u-visually-hidden" aria-live="assertive"&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="modal-dialog__inner__block"&gt;&lt;button class="button dialog-button modal-dialog__inner__button js-dialog-close"&gt;Continue application&lt;/button&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/dialog&gt; &lt;!-- Return from Cookie --&gt; &lt;!-- Store the url for cookie return --&gt;<br/>
+  &lt;script&gt;<br/>
+        function getURL() {<br/>
+          // checks to see if cookie prefence has been set<br/>
+          if (NHSCookieConsent.getConsented() === false) {<br/>
+            // gets the current URL<br/>
+            const getURL = document.referrer;<br/>
+            // stores URL in session storage<br/>
+            sessionStorage.setItem("sessionURL", getURL);<br/>
+          }<br/>
+        }<br/>
+      &lt;/script&gt;<br/>
+  &lt;script&gt;<br/>
+				// Document ready<br/>
+				(function () {<br/>
+					getURL();<br/>
+				})();<br/>
+			&lt;/script&gt;&lt;!-- end of cookie scripts --&gt;<br/>
+  &lt;div id="global-app-error" class="app-error hidden"&gt;&lt;/div&gt;<br/>
+  &lt;script src="/javascripts/jquery-3.6.0.min-7c14a783dfeb3d238ccd3edd840d82ee.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/javascripts/app-extended-4fe13068bb0588936713bff87e02c914.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/webjars/nhsbsa-session-timeout/2.0.1/javascript/modal-dialog-c189380d40d547cc2701289373db1d46.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/webjars/nhsbsa-session-timeout/2.0.1/javascript/dialog-polyfill.0.5.6-4b41b8ee58c651d8b7624d86165475fa.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/webjars/nhsbsa-session-timeout/2.0.1/javascript/session-timeout-6f4f41628f90a38416ce495731257d7d.js"&gt;&lt;/script&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

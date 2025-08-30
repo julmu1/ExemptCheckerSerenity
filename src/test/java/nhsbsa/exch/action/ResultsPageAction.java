@@ -19,5 +19,13 @@ public class ResultsPageAction {
         resultsPage.verifyNoMatchMessageIsDisplayed();
     }
 
+    public void I_verify_the_results_content_indicates_no_dental_exemption() {
+        resultsPage.verifyExemptionDetailsIncludePrescriptionsOnly();
+    }
+
+    public void I_verify_results_contain_guidance_for_collecting_prescriptions(){
+        resultsPage.verifyExemptionDetailsIncludePrescriptionGuidance();
+    }
+
 
 }

@@ -69,6 +69,18 @@ public class HomePageStepDefs {
         resultsPageAction.I_verify_the_no_match_message_is_displayed();
     }
 
+    @Then("I should see that I am exempt from prescriptions but not dental checkups and treatment")
+    public void i_should_see_that_i_am_exempt_from_prescriptions_but_not_dental_checkups_and_treatment() {
+//        resultsPageAction.I_verify_the_results_heading_is_visible();
+        resultsPageAction.I_verify_the_results_content_indicates_no_dental_exemption();
+    }
+
+    @And("the content contains details on how to get help and collecting prescriptions")
+    public void the_content_contains_details_on_how_to_get_help_and_collecting_prescriptions() {
+        resultsPageAction.I_verify_results_contain_guidance_for_collecting_prescriptions();
+    }
+
+
 
 
 
