@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Happy path test" skipped="0" tests="1" time="13.88" timestamp="2025-08-29 02:51:29"><testcase name="As a user over 30 I want to check if I am exempt from paying for prescriptions"><failure message="Continue button is not visible!" type="java.lang.AssertionError">Continue button is not visible!</failure><system-err>Continue button is not visible!
+nhsbsa.exch.pages.DateOfBirthPage.verifyContinueButtonIsVisibleAndEnabled(DateOfBirthPage.java:40)
+nhsbsa.exch.action.DateOfBirthActions.I_verify_the_continue_button_is_visible_and_enabled(DateOfBirthActions.java:19)
+nhsbsa.exch.stepDefinitions.HomePageStepDefs.my_date_of_birth_is(HomePageStepDefs.java:26)
+</system-err></testcase></testsuite>
