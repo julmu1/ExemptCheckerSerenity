@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="8" name="Dental Exemptions" skipped="0" tests="11" time="51.98" timestamp="2025-09-12 08:21:01"><testcase name="End to End scenarios for dental exemptions"><failure message="Unknown output type: Result 60 or over" type="java.lang.AssertionError">Unknown output type: Result 60 or over</failure><system-err>Unknown output type: Result 60 or over
+nhsbsa.exch.pages.ResultsPage.verifyUrlDentalExemptContainsOutputs(ResultsPage.java:166)
+nhsbsa.exch.action.ResultsPageAction.I_verify_the_results_page_url_for_Dental_Exemptions_contains(ResultsPageAction.java:40)
+nhsbsa.exch.stepDefinitions.DentalExemptionsStepDefs.i_should_see_the_screen(DentalExemptionsStepDefs.java:14)
+</system-err></testcase></testsuite>

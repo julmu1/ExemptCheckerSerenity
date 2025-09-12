@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="10" name="End to end" skipped="0" tests="18" time="134.73" timestamp="2025-09-10 07:56:46"><testcase name="End to end of all services through Am I Exempt"><failure message="Expiry date header is not present on the results page!" type="java.lang.AssertionError">Expiry date header is not present on the results page!</failure><system-err>Expiry date header is not present on the results page!
+nhsbsa.exch.pages.ResultsPage.verifyExpiryOnResultsPage(ResultsPage.java:119)
+nhsbsa.exch.action.ResultsPageAction.I_should_see_output_and_expiry(ResultsPageAction.java:32)
+nhsbsa.exch.stepDefinitions.EndToEndStepDefs.iWillSeeAndMy(EndToEndStepDefs.java:21)
+</system-err></testcase></testsuite>

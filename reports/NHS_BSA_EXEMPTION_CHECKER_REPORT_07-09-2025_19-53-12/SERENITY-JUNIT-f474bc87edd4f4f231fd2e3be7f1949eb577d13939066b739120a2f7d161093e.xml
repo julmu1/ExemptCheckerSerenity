@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="2" name="Validate functionality on start page" skipped="0" tests="4" time="25.71" timestamp="2025-09-07 07:56:37"><testcase name="Validate links on start page"><error message="Unrecognized link name for URL verification: Privacy" type="java.lang.AssertionError">Unrecognized link name for URL verification: Privacy</error><system-err>Unrecognized link name for URL verification: Privacy
+nhsbsa.exch.pages.StartPage.verifyUrlContainsLinkKeyword(StartPage.java:94)
+nhsbsa.exch.action.StartPageActions.verify_screen_title(StartPageActions.java:24)
+nhsbsa.exch.stepDefinitions.HomePageStepDefs.i_should_see(HomePageStepDefs.java:94)
+</system-err></testcase></testsuite>

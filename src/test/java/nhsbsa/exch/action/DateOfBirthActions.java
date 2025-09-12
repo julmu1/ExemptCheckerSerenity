@@ -31,6 +31,13 @@ public class DateOfBirthActions {
         dateOfBirthPage.verifyErrorSummaryIsVisible();
     }
 
+    public void I_declare_my_age(String ageInput) {
+        dateOfBirthPage.iDeclareMyAge(ageInput);
+    }
+
+    public void I_verify_DOB_page_url_contains(String outputs) {
+        dateOfBirthPage.verifyDOBOutcome(outputs);
+    }
 
 
 }

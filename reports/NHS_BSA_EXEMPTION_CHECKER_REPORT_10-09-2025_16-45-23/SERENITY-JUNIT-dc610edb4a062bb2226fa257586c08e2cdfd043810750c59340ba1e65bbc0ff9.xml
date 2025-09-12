@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="3" name="Cookie banner functionality" skipped="1" tests="4" time="37.72" timestamp="2025-09-10 04:45:29"><testcase name="Cookie banner is displayed on initial load"><failure message="Cookie banner is not visible on the page." type="java.lang.AssertionError">Cookie banner is not visible on the page.</failure><system-err>Cookie banner is not visible on the page.
+nhsbsa.exch.pages.CookieBannerPage.verifyCookieBannerIsVisible(CookieBannerPage.java:27)
+nhsbsa.exch.action.CookieBannerActions.I_verify_cookie_banner_is_displayed(CookieBannerActions.java:22)
+nhsbsa.exch.stepDefinitions.CookiesStepDefs.i_should_see_the_cookie_banner(CookiesStepDefs.java:16)
+</system-err></testcase><testcase name="Accepting cookies hides the banner"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled
+nhsbsa.exch.pages.CookieBannerPage.acceptAnalyticsCookies(CookieBannerPage.java:17)
+nhsbsa.exch.action.CookieBannerActions.I_accept_cookies(CookieBannerActions.java:10)
+nhsbsa.exch.stepDefinitions.CookiesStepDefs.i_accept_cookies(CookiesStepDefs.java:21)
+</system-err></testcase><testcase name="Rejecting cookies hides the banner"><skipped/></testcase><testcase name="Cookie preference persists across pages"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled
+nhsbsa.exch.pages.CookieBannerPage.acceptAnalyticsCookies(CookieBannerPage.java:17)
+nhsbsa.exch.action.CookieBannerActions.I_accept_cookies(CookieBannerActions.java:10)
+nhsbsa.exch.stepDefinitions.CookiesStepDefs.i_accept_cookies(CookiesStepDefs.java:21)
+</system-err></testcase></testsuite>

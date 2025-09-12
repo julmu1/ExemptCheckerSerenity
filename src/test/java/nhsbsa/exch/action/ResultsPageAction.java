@@ -27,5 +27,18 @@ public class ResultsPageAction {
         resultsPage.verifyExemptionDetailsIncludePrescriptionGuidance();
     }
 
+    public void I_should_see_output_and_expiry(String output, String expirydate) {
+        resultsPage.verifyUrlContainsOutput(output);
+        resultsPage.verifyExpiryOnResultsPage(expirydate);
+    }
+
+    public void I_verify_the_results_page_url_for_DoB_contains(String outputs) {
+        resultsPage.verifyUrlDoBContainsOutputs(outputs);
+    }
+
+    public void I_verify_the_results_page_url_for_Dental_Exemptions_contains(String output) {
+        resultsPage.verifyUrlDentalExemptContainsOutputs(output);
+    }
+
 
 }

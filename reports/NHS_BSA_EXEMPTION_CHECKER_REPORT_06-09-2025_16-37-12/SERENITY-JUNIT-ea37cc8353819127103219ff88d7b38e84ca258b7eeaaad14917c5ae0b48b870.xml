@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="29" name="Date of Birth Validation" skipped="0" tests="29" time="249.26" timestamp="2025-09-06 04:37:17"><testcase name="Validate date of birth entry with day, month, and year"><failure message="Screen title element is not present!" type="java.lang.AssertionError">Screen title element is not present!</failure><system-err>Screen title element is not present!
+nhsbsa.exch.pages.StartPage.getScreenTitle(StartPage.java:64)
+nhsbsa.exch.action.StartPageActions.verify_screen_title(StartPageActions.java:24)
+nhsbsa.exch.stepDefinitions.HomePageStepDefs.i_should_see(HomePageStepDefs.java:94)
+</system-err></testcase><testcase name="Validate age-based entry"><failure message="Screen title element is not present!" type="java.lang.AssertionError">Screen title element is not present!</failure><system-err>Screen title element is not present!
+nhsbsa.exch.pages.StartPage.getScreenTitle(StartPage.java:64)
+nhsbsa.exch.action.StartPageActions.verify_screen_title(StartPageActions.java:24)
+nhsbsa.exch.stepDefinitions.HomePageStepDefs.i_should_see(HomePageStepDefs.java:94)
+</system-err></testcase></testsuite>

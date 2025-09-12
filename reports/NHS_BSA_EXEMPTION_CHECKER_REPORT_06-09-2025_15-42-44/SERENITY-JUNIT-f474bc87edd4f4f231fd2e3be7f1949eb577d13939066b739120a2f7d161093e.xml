@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="6" name="Validate functionality on start page" skipped="0" tests="6" time="33.91" timestamp="2025-09-06 03:42:48"><testcase name="Validate links on start page"><failure message="Footer link not available or unrecognized: Privacy" type="java.lang.AssertionError">Footer link not available or unrecognized: Privacy</failure><system-err>Footer link not available or unrecognized: Privacy
+nhsbsa.exch.pages.StartPage.clickFooterLinks(StartPage.java:43)
+nhsbsa.exch.action.StartPageActions.I_click_footer_link(StartPageActions.java:20)
+nhsbsa.exch.stepDefinitions.HomePageStepDefs.i_choose_the(HomePageStepDefs.java:90)
+</system-err></testcase></testsuite>

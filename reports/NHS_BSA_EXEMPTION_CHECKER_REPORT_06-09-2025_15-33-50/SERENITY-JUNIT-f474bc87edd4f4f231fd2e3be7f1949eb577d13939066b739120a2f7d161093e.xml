@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="6" name="Validate functionality on start page" skipped="0" tests="6" time="63.61" timestamp="2025-09-06 03:33:59"><testcase name="Validate links on start page"><failure message="One or more footer links are not available!" type="java.lang.AssertionError">One or more footer links are not available!</failure><system-err>One or more footer links are not available!
+nhsbsa.exch.pages.StartPage.clickFooterLinks(StartPage.java:43)
+nhsbsa.exch.action.StartPageActions.I_click_footer_link(StartPageActions.java:20)
+nhsbsa.exch.stepDefinitions.HomePageStepDefs.i_choose_the(HomePageStepDefs.java:90)
+</system-err></testcase></testsuite>

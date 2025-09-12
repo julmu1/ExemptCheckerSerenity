@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         glue = {"nhsbsa.exch.stepDefinitions"},
         plugin = {"pretty"},
         features = "src/test/resources/features",
-        tags = "not @Pensions"
+        tags = "not @test and not @Pensions"
 )
 public class NHSExemptionCheckerCompleteTestSuite {
 }

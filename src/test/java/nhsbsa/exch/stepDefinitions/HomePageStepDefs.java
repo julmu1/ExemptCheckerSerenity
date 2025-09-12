@@ -26,6 +26,11 @@ public class HomePageStepDefs {
         startPageActions.i_have_clicked_on_start_now_button();
     }
 
+    @Given("I am checking start page")
+    public void i_am_checking_start_page() {
+        startPageActions.I_launch_the_NHSBSA_prescription_cost_checker_website();}
+
+
     @When("my date of birth is {string} {string} {string}")
     public void my_date_of_birth_is(String day, String month, String year) {
         dateOfBirthActions.I_verify_the_date_of_birth_heading_is_visible();
@@ -78,6 +83,17 @@ public class HomePageStepDefs {
     @And("the content contains details on how to get help and collecting prescriptions")
     public void the_content_contains_details_on_how_to_get_help_and_collecting_prescriptions() {
         resultsPageAction.I_verify_results_contain_guidance_for_collecting_prescriptions();
+    }
+
+    @When("I choose the {string}")
+    public void i_choose_the(String string){
+        startPageActions.verify_links(string);
+//        startPageActions.I_click_footer_link(string);
+    }
+    @Then("I should see {string}")
+    public void i_should_see(String screen){
+        startPageActions.verify_screen_title(screen);
+
     }
 
 

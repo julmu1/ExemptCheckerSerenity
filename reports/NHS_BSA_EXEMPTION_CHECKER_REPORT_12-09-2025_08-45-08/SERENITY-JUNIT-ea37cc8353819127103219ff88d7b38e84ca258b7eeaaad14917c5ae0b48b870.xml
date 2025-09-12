@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Date of Birth Validation" skipped="0" tests="29" time="40.98" timestamp="2025-09-12 08:45:17"><testcase name="Validate date of birth entry with day, month, and year"/><testcase name="Validate age-based entry"/></testsuite>

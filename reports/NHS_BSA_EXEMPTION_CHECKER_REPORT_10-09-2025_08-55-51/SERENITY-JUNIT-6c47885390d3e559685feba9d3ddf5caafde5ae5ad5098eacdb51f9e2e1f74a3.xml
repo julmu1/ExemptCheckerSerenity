@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="10" failures="0" name="End to end" skipped="0" tests="18" time="166.26" timestamp="2025-09-10 08:56:28"><testcase name="End to end of all services through Am I Exempt"><error message="Expected condition failed: waiting for By.xpath: //*[contains(normalize-space(), 'Expires on')] to be displayed (tried for 10 second(s) with 100 milliseconds interval)&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6.1', java.version: '24.0.2'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Expected condition failed: waiting for By.xpath: //*[contains(normalize-space(), 'Expires on')] to be displayed (tried for 10 second(s) with 100 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6.1', java.version: '24.0.2'
+Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for By.xpath: //*[contains(normalize-space(), 'Expires on')] to be displayed (tried for 10 second(s) with 100 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6.1', java.version: '24.0.2'
+Driver info: driver.version: unknown
+nhsbsa.exch.pages.ResultsPage.verifyExpiryOnResultsPage(ResultsPage.java:108)
+nhsbsa.exch.action.ResultsPageAction.I_should_see_output_and_expiry(ResultsPageAction.java:32)
+nhsbsa.exch.stepDefinitions.EndToEndStepDefs.iWillSeeAndMy(EndToEndStepDefs.java:21)
+</system-err></testcase></testsuite>

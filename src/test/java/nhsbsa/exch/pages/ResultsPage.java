@@ -1,5 +1,6 @@
 package nhsbsa.exch.pages;
 
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.steps.UIInteractionSteps;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -13,6 +14,8 @@ public class ResultsPage extends UIInteractionSteps {
     static By EXEMPTION_EXCLUSIONS_HEADER = By.xpath("//dt[normalize-space()='This exemption is not for']");
     static By DENTAL_EXCLUSION_ITEM = By.xpath("//dd[contains(text(), 'NHS dental check-ups') or contains(text(), 'NHS dental treatment')]");
     static By DENTAL_EXCLUSION_HEADER = By.xpath("//dt[normalize-space()='This exemption is not for']");
+    static By EXPIRY_DATE_HEADER = By.xpath("//*[contains(normalize-space(), 'Expires on')]");
+
     public void verifyResultsHeadingIsVisible() {
         if ($(RESULTS_HEADING).isPresent()) {
             $(RESULTS_HEADING).shouldBeVisible();
@@ -82,7 +85,95 @@ public class ResultsPage extends UIInteractionSteps {
         }
     }
 
+    public void verifyUrlContainsOutput(String output) {
+        String currentUrl = getDriver().getCurrentUrl();
+        String normalizedOutput = output.toLowerCase();
+
+        if (normalizedOutput.contains("prescription") && normalizedOutput.contains("dental")) {
+            Assert.assertTrue("URL should contain both 'prescription' and 'dental'",
+                    currentUrl.contains("prescription") && currentUrl.contains("dental"));
+        } else if (normalizedOutput.contains("prescription")) {
+            Assert.assertTrue("URL should contain 'prescription'", currentUrl.contains("prescription"));
+        } else if (normalizedOutput.contains("dental")) {
+            Assert.assertTrue("URL should contain 'dental'", currentUrl.contains("dental"));
+        }else if (normalizedOutput.contains("no match")) {
+            Assert.assertTrue("URL should contain 'result-exemption-not-found'", currentUrl.contains("result-exemption-not-found"));
+         } else {
+            Assert.fail("Unknown output type: " + output);
+        }
+    }
+
+
+    public void verifyExpiryOnResultsPage(String expectedDatePart) {
+        // Locate the result message or header
+        WebElementFacade resultMessage = $(By.xpath("//*[contains(text(), 'We cannot match you to our records') or contains(text(), 'We could not find your exemption')]"));
+
+        // If "No Match" is present, skip expiry check
+        if (resultMessage.isPresent()) {
+            System.out.println("Result is 'No Match' — expiry date header is not expected.");
+            return;
+        }
+
+        // Otherwise, check for expiry date header
+        WebElementFacade expiryElement = $(EXPIRY_DATE_HEADER).waitUntilVisible();
+
+        String actualText = expiryElement.getText();
+        if (!actualText.contains(expectedDatePart)) {
+            Assert.fail("Expiry date mismatch! Expected to contain: " + expectedDatePart + ", but found: " + actualText);
+        }
+    }
+
+
+
+    public void verifyUrlDoBContainsOutputs(String outputs) {
+        String currentUrl = getDriver().getCurrentUrl().toLowerCase();
+        String normalizedOutput = outputs.toLowerCase();
+
+        if (normalizedOutput.contains("under 16")) {
+            Assert.assertTrue("URL should contain 'under-16'", currentUrl.contains("under-16"));
+        } else if (normalizedOutput.contains("name screen")) {
+            Assert.assertTrue("URL should contain 'name-exempt'", currentUrl.contains("enter-name"));
+        } else if (normalizedOutput.contains("dob invalid year")) {
+            Assert.assertTrue("URL should contain 'date-of-birth'", currentUrl.contains("dob-invalid-year"));
+        } else if (normalizedOutput.contains("dob invalid")) {
+            Assert.assertTrue("URL should contain 'date_of_birth'", currentUrl.contains("dob-invalid"));
+        } else {
+            Assert.fail("Unknown output type: " + outputs);
+        }
+    }
+
+    public void verifyUrlDentalExemptContainsOutputs(String output) {
+        String currentUrl = getDriver().getCurrentUrl().toLowerCase();
+        String normalizedOutput = output.toLowerCase();
+
+        if (normalizedOutput.contains("under 16")) {
+            Assert.assertTrue("URL should contain 'under-16'", currentUrl.contains("under-16"));
+        } else if (normalizedOutput.contains("name screen")) {
+            Assert.assertTrue("URL should contain 'name-exempt'", currentUrl.contains("enter-name"));
+        } else if (normalizedOutput.contains("dob invalid year")) {
+            Assert.assertTrue("URL should contain 'date-of-birth'", currentUrl.contains("dob-invalid-year"));
+        } else if (normalizedOutput.contains("dob invalid")) {
+            Assert.assertTrue("URL should contain 'date_of_birth'", currentUrl.contains("dob-invalid"));
+        } else if (normalizedOutput.contains("no match")) {
+            Assert.assertTrue("URL should contain 'result-exemption-not-found'", currentUrl.contains("result-exemption-not-found"));
+        } else if (normalizedOutput.contains("result 60 or over")) {
+            Assert.assertTrue("URL should contain 'results/result-60-or-over'", currentUrl.contains("results/result-60-or-over"));
+        } else if (normalizedOutput.contains("result prescription dental exemption")) {
+            Assert.assertTrue("URL should contain 'results/result-prescription-dental-exemption-found'", currentUrl.contains("results/result-prescription-dental-exemption-found"));
+        } else if (normalizedOutput.contains("result prescription exemption")) {
+            Assert.assertTrue("URL should contain 'results/result-prescription-exemption-found'", currentUrl.contains("results/result-prescription-exemption-found"));
+        } else {
+            Assert.fail("Unknown output type: " + output);
+        }
+    }
+
+
+
+
+
 }
+
+
 
 
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="26" name="Date of Birth Validation" skipped="0" tests="29" time="106.66" timestamp="2025-09-07 07:53:22"><testcase name="Validate date of birth entry with day, month, and year"><failure message="Unrecognized link name for URL verification: DOB Invalid" type="java.lang.AssertionError">Unrecognized link name for URL verification: DOB Invalid</failure><system-err>Unrecognized link name for URL verification: DOB Invalid
+nhsbsa.exch.pages.StartPage.verifyUrlContainsLinkKeyword(StartPage.java:94)
+nhsbsa.exch.action.StartPageActions.verify_screen_title(StartPageActions.java:24)
+nhsbsa.exch.stepDefinitions.HomePageStepDefs.i_should_see(HomePageStepDefs.java:94)
+</system-err></testcase><testcase name="Validate age-based entry"><failure message="URL should contain 'name-exempt'" type="java.lang.AssertionError">URL should contain 'name-exempt'</failure><system-err>URL should contain 'name-exempt'
+nhsbsa.exch.pages.ResultsPage.verifyUrlDoBContainsOutputs(ResultsPage.java:128)
+nhsbsa.exch.action.ResultsPageAction.I_verify_the_results_page_url_for_DoB_contains(ResultsPageAction.java:36)
+nhsbsa.exch.stepDefinitions.DateofBirthStepDefs.iShouldSeeThese(DateofBirthStepDefs.java:32)
+</system-err></testcase></testsuite>

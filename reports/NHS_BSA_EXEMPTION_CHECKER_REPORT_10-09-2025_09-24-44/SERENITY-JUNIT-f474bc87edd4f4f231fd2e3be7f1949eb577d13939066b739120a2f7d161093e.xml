@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="3" name="Validate functionality on start page" skipped="0" tests="4" time="39.72" timestamp="2025-09-10 09:26:53"><testcase name="Validate links on start page"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled
+nhsbsa.exch.pages.StartPage.verifyUrlContainsLinkKeyword(StartPage.java:93)
+nhsbsa.exch.action.StartPageActions.verify_links(StartPageActions.java:33)
+nhsbsa.exch.stepDefinitions.HomePageStepDefs.i_choose_the(HomePageStepDefs.java:90)
+</system-err></testcase></testsuite>
